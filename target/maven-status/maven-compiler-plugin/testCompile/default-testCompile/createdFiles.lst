@@ -1,0 +1,3 @@
+com\sdet\tests\ConfigTest.class
+com\sdet\base\BaseTest.class
+com\sdet\utils\ConfigReader.class
