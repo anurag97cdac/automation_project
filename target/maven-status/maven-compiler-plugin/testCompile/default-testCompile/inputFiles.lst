@@ -1,3 +1,8 @@
 Z:\Python\automation_project\src\test\java\com\sdet\base\BaseTest.java
+Z:\Python\automation_project\src\test\java\com\sdet\Pages\LoginPage.java
 Z:\Python\automation_project\src\test\java\com\sdet\tests\ConfigTest.java
+Z:\Python\automation_project\src\test\java\com\sdet\tests\LoginTest.java
 Z:\Python\automation_project\src\test\java\com\sdet\utils\ConfigReader.java
+Z:\Python\automation_project\src\test\java\com\sdet\utils\DriverFactory.java
+Z:\Python\automation_project\src\test\java\com\sdet\utils\ExtentManager.java
+Z:\Python\automation_project\src\test\java\com\sdet\utils\ScreenShotUtil.java

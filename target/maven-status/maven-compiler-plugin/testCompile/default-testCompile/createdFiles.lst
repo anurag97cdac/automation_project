@@ -1,3 +1,8 @@
-com\sdet\tests\ConfigTest.class
 com\sdet\base\BaseTest.class
 com\sdet\utils\ConfigReader.class
+com\sdet\utils\ScreenShotUtil.class
+com\sdet\Pages\LoginPage.class
+com\sdet\tests\ConfigTest.class
+com\sdet\utils\ExtentManager.class
+com\sdet\tests\LoginTest.class
+com\sdet\utils\DriverFactory.class

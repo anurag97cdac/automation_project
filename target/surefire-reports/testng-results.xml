@@ -1,25 +1,149 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-31T19:36:53 IST" name="Surefire suite" finished-at="2026-03-31T19:37:08 IST" duration-ms="15389">
+  <suite started-at="2026-04-19T12:46:52 IST" name="Parallel Suite" finished-at="2026-04-19T12:47:11 IST" duration-ms="19177">
     <groups>
     </groups>
-    <test started-at="2026-03-31T19:36:53 IST" name="Surefire test" finished-at="2026-03-31T19:37:08 IST" duration-ms="15389">
-      <class name="com.sdet.tests.ConfigTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.sdet.tests.ConfigTest@1c93084c]" started-at="2026-03-31T19:36:53 IST" name="setUp" finished-at="2026-03-31T19:37:08 IST" duration-ms="15134" status="PASS">
+    <test started-at="2026-04-19T12:46:52 IST" name="Firefox test" finished-at="2026-04-19T12:47:11 IST" duration-ms="19117">
+      <class name="com.sdet.tests.LoginTest">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:com.sdet.tests.LoginTest@1fa268de]" started-at="2026-04-19T12:46:52 IST" name="startReport" finished-at="2026-04-19T12:46:52 IST" duration-ms="167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,java.lang.String)[pri:0, instance:com.sdet.tests.LoginTest@1fa268de]" started-at="2026-04-19T12:46:52 IST" name="setUp" finished-at="2026-04-19T12:47:00 IST" duration-ms="8208" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sdet.tests.LoginTest.invalidLoginTest()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testConfig()[pri:0, instance:com.sdet.tests.ConfigTest@1c93084c]" started-at="2026-03-31T19:37:08 IST" name="testConfig" finished-at="2026-03-31T19:37:08 IST" duration-ms="9" status="PASS">
+        <test-method signature="invalidLoginTest()[pri:0, instance:com.sdet.tests.LoginTest@1fa268de]" started-at="2026-04-19T12:47:00 IST" name="invalidLoginTest" finished-at="2026-04-19T12:47:01 IST" duration-ms="940" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testConfig -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sdet.tests.ConfigTest@1c93084c]" started-at="2026-03-31T19:37:08 IST" name="tearDown" finished-at="2026-03-31T19:37:08 IST" duration-ms="213" status="PASS">
+        </test-method> <!-- invalidLoginTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.sdet.tests.LoginTest@1fa268de]" started-at="2026-04-19T12:47:01 IST" name="tearDown" finished-at="2026-04-19T12:47:02 IST" duration-ms="776" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidLoginTest status=SUCCESS method=LoginTest.invalidLoginTest()[pri:0, instance:com.sdet.tests.LoginTest@1fa268de] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.sdet.tests.ConfigTest -->
-    </test> <!-- Surefire test -->
-  </suite> <!-- Surefire suite -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,java.lang.String)[pri:0, instance:com.sdet.tests.LoginTest@1fa268de]" started-at="2026-04-19T12:47:02 IST" name="setUp" finished-at="2026-04-19T12:47:09 IST" duration-ms="6948" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sdet.tests.LoginTest.loginLogoutTest()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginLogoutTest()[pri:0, instance:com.sdet.tests.LoginTest@1fa268de]" started-at="2026-04-19T12:47:09 IST" name="loginLogoutTest" finished-at="2026-04-19T12:47:10 IST" duration-ms="1585" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginLogoutTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.sdet.tests.LoginTest@1fa268de]" started-at="2026-04-19T12:47:10 IST" name="tearDown" finished-at="2026-04-19T12:47:11 IST" duration-ms="635" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginLogoutTest status=SUCCESS method=LoginTest.loginLogoutTest()[pri:0, instance:com.sdet.tests.LoginTest@1fa268de] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.sdet.tests.LoginTest@1fa268de]" started-at="2026-04-19T12:47:11 IST" name="endReport" finished-at="2026-04-19T12:47:11 IST" duration-ms="178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- com.sdet.tests.LoginTest -->
+    </test> <!-- Firefox test -->
+    <test started-at="2026-04-19T12:46:52 IST" name="Chrome Test" finished-at="2026-04-19T12:47:11 IST" duration-ms="19177">
+      <class name="com.sdet.tests.LoginTest">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,java.lang.String)[pri:0, instance:com.sdet.tests.LoginTest@20deea7f]" started-at="2026-04-19T12:46:52 IST" name="setUp" finished-at="2026-04-19T12:47:02 IST" duration-ms="10372" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sdet.tests.LoginTest.invalidLoginTest()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="invalidLoginTest()[pri:0, instance:com.sdet.tests.LoginTest@20deea7f]" started-at="2026-04-19T12:47:02 IST" name="invalidLoginTest" finished-at="2026-04-19T12:47:03 IST" duration-ms="1093" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLoginTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.sdet.tests.LoginTest@20deea7f]" started-at="2026-04-19T12:47:03 IST" name="tearDown" finished-at="2026-04-19T12:47:04 IST" duration-ms="555" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidLoginTest status=SUCCESS method=LoginTest.invalidLoginTest()[pri:0, instance:com.sdet.tests.LoginTest@20deea7f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,java.lang.String)[pri:0, instance:com.sdet.tests.LoginTest@20deea7f]" started-at="2026-04-19T12:47:04 IST" name="setUp" finished-at="2026-04-19T12:47:09 IST" duration-ms="5191" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sdet.tests.LoginTest.loginLogoutTest()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginLogoutTest()[pri:0, instance:com.sdet.tests.LoginTest@20deea7f]" started-at="2026-04-19T12:47:09 IST" name="loginLogoutTest" finished-at="2026-04-19T12:47:11 IST" duration-ms="1825" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginLogoutTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.sdet.tests.LoginTest@20deea7f]" started-at="2026-04-19T12:47:11 IST" name="tearDown" finished-at="2026-04-19T12:47:11 IST" duration-ms="119" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginLogoutTest status=SUCCESS method=LoginTest.loginLogoutTest()[pri:0, instance:com.sdet.tests.LoginTest@20deea7f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.sdet.tests.LoginTest -->
+    </test> <!-- Chrome Test -->
+  </suite> <!-- Parallel Suite -->
 </testng-results>
