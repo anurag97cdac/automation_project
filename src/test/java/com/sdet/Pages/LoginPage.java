@@ -5,11 +5,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.sdet.utils.WaitUitls;
+
 public class LoginPage {
     
+    private WaitUitls waitUtil;
     WebDriver driver;
     public LoginPage(WebDriver driver){
         this.driver = driver;
+        this.waitUtil = new WaitUitls(driver);
         PageFactory.initElements(driver,this);
     }
 
@@ -23,25 +27,25 @@ public class LoginPage {
     WebElement loginButton;
 
     @FindBy(id = "flash")
-    WebElement message;
+    WebElement flashMessage;
 
     @FindBy(xpath = "//i[text()=' Logout']")
     WebElement logoutButton;
 
     public void enterUserName(String user){
-        username.sendKeys(user);
+        waitUtil.waitForVisiblity(username).sendKeys(user);
     }
 
     public void enterPassword(String pass){
-        password.sendKeys(pass);
+        waitUtil.waitForVisiblity(password).sendKeys(pass);
     }
     
     public void clickLogin(){
-        loginButton.click();
+        waitUtil.waitForClickable(loginButton).click();
     }
 
     public String getMessage(){
-        return message.getText();
+        return waitUtil.waitForVisiblity(flashMessage).getText();
     }
 
     public void clickLogout(){
@@ -49,11 +53,11 @@ public class LoginPage {
     }
 
     public String getLogoutMessage(){
-        return message.getText();
+        return waitUtil.waitForVisiblity(flashMessage).getText();
     }
 
     public String getInvalidMessage(){
-        return message.getText();
+        return waitUtil.waitForVisiblity(flashMessage).getText();
     }
 
 
