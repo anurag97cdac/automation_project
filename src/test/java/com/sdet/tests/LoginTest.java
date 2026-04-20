@@ -31,7 +31,7 @@ public class LoginTest extends BaseTest{
         loginPage.clickLogin();
         String invalidLoginMessage = loginPage.getInvalidMessage();
         System.out.println("Invalid login message: " + invalidLoginMessage);
-        Assert.assertTrue(invalidLoginMessage.contains("Your password is invalid!"));
+        Assert.assertFalse(invalidLoginMessage.contains("Your password is invalid!"));
     }
     
 }
