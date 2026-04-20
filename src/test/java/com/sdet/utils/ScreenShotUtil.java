@@ -19,16 +19,15 @@ public class ScreenShotUtil {
         String dirPath = "screenshots";
         String screenShotName = testname + "_" + System.currentTimeMillis() + "_T" + Thread.currentThread().getId();
         String path = dirPath + "/" + screenShotName +".png";
-        Path destination = Paths.get(path).toAbsolutePath();
         try {
             //Create the directory if it doesn't exist
             Files.createDirectories(Paths.get(dirPath));
-            Files.copy(srcFile.toPath(), destination);
+            Files.copy(srcFile.toPath(), Paths.get(path));
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
         
-        return destination.toString(); // Placeholder return statement
+        return path; // Placeholder return statement
     }
 }
