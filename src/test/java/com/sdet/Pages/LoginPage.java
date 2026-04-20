@@ -5,15 +5,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sdet.utils.WaitUitls;
+import com.sdet.utils.WaitUtils;
 
 public class LoginPage {
     
-    private WaitUitls waitUtil;
+    private WaitUtils waitUtil;
     WebDriver driver;
     public LoginPage(WebDriver driver){
         this.driver = driver;
-        this.waitUtil = new WaitUitls(driver);
+        this.waitUtil = new WaitUtils(driver);
         PageFactory.initElements(driver,this);
     }
 

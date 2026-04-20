@@ -6,3 +6,4 @@ com\sdet\tests\ConfigTest.class
 com\sdet\utils\ExtentManager.class
 com\sdet\tests\LoginTest.class
 com\sdet\utils\DriverFactory.class
+com\sdet\utils\WaitUtils.class

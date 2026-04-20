@@ -7,15 +7,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class WaitUitls {
+public class WaitUtils {
     private WebDriver driver;
     private WebDriverWait wait;
 
-    public WaitUitls(WebDriver driver2) {
-		//TODO Auto-generated constructor stub
-	}
 
-	public void WaitUitls(WebDriver driver){
+    public WaitUtils(WebDriver driver){
 
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
