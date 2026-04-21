@@ -36,6 +36,6 @@ public class ScreenShotUtil {
             e.printStackTrace();
         }
         
-        return path; // Placeholder return statement
+        return "screenshots/" + screenShotName +".png"; // Placeholder return statement
     }
 }
