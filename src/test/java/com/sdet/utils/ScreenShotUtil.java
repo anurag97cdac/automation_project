@@ -5,6 +5,9 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -14,10 +17,15 @@ public class ScreenShotUtil {
     public static String captureScreenShot(String testname){
         //Implement logic to capture screenshot and return the path of the saved screenshot
         WebDriver driver = DriverFactory.getDriver();
+        //create Date Time Formatter
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd_HH-mm-ss");
+        //Get currrent date and time
+        String dateTime = LocalDateTime.now().format(dtf);
         //Use Selenium's TakesScreenshot interface to capture the screenshot
         File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-        String dirPath = "screenshots";
-        String screenShotName = testname + "_" + System.currentTimeMillis() + "_T" + Thread.currentThread().getId();
+        String dirPath = "test-output/screenshots";
+        //Create aunique Screenshot name
+        String screenShotName = testname + "_" + dateTime + "_T" + Thread.currentThread().getId();
         String path = dirPath + "/" + screenShotName +".png";
         try {
             //Create the directory if it doesn't exist
